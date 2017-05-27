@@ -20,7 +20,7 @@ get_header();
                update_user_meta($user_id,'last_name',$lastname);
            }
         }else{
-            echo "Both Password Must be same";
+            echo "Password Not Matched";
         } 
         ?>
     <section class="inner_banner">
