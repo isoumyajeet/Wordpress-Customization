@@ -21,7 +21,7 @@ $user = wp_signon( $creds, false );
 	if ( !is_wp_error($user) ) 
 	{
 	  //header("location:".get_permalink(165));
-            wp_redirect( home_url()."/my-account" );
+            wp_redirect( home_url()."/post-page-name" );
 	}
 	else
 	{		
