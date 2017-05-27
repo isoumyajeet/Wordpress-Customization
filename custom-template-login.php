@@ -34,7 +34,7 @@ get_header();
                                         <input type="submit" value="login"/>
                                     </div>
                                     <div class="col-lg-12">
-                                        <p>Not a registered user? <a href="<?php the_permalink(page number); ?>" style="color:#7DB0B7;">Sign Up now.</a></p>
+                                        <p>Not a registered user? <a href="<?php the_permalink(page number); ?>">Sign Up now.</a></p>
                                     </div>
                                 </div>                               
                             </form>
