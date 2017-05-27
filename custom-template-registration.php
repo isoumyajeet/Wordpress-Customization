@@ -11,13 +11,13 @@ get_header();
     $conpassword = $_REQUEST['confirmpassword'];
         if($password==$conpassword){
         //echo "Password Matched";
-           $user_id = wc_create_new_customer( $email, $email, $conpassword );
+           $user_id = wc_create_new_customer( $email, $email, $conpassword );// registered the user using woocommerce function only 3 parameter passed in
           if ( is_wp_error( $user_id ) ) {
                 $error_string = $user_id->get_error_message();
                 //echo '<div id="message" class="error"><p>' . $error_string . '</p></div>';
            }else{
-               update_user_meta($user_id,'first_name',$firstname);
-               update_user_meta($user_id,'last_name',$lastname);
+               update_user_meta($user_id,'first_name',$firstname); // insert number of additional data to the table 
+               update_user_meta($user_id,'last_name',$lastname); // insert number of additional data to the table 
            }
         }else{
             echo "Password Not Matched";
